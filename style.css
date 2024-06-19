@@ -9,9 +9,11 @@
 body {
   background: #212020;
 }
-html{
-  scroll-behavior: smooth ;
+
+html {
+  scroll-behavior: smooth;
 }
+
 /* Header */
 #header {
   width: 90%;
@@ -254,7 +256,6 @@ nav ul li a:hover::after {
 }
 
 .projects-list div {
-
   background: #494848;
   padding: 40px;
   font-size: 13px;
@@ -337,7 +338,6 @@ nav ul li a:hover::after {
 }
 
 .btn:active, .btn2:active {
- 
   background-color: #d15087;
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -368,7 +368,7 @@ form input, form textarea {
 }
 
 /* Small screen */
-nav .fa-solid {
+nav .fas {
   display: none;
 }
 
@@ -393,62 +393,32 @@ nav .fa-solid {
     margin: 0 auto;
   }
 
-  .header-text {
-    margin-top: 20%;
-    font-size: 16px;
-  }
-
-  .header-text h1 {
-    font-size: 40px;
-  }
-
-  #aboutme {
-    margin-top: 500px;
-    font-size: 28px;
-  }
-
-  nav .fa-solid {
+  nav .fas {
     display: block;
     font-size: 25px;
   }
 
   nav ul {
-    background: #ffb6c1; 
+    display: block;
+    background: #ffb6c1;
     position: fixed;
     top: 0;
- right:-300px; 
-    width: 100%;  
-    height: 100vh; 
+    right: -200px; /* Initially offscreen */
+    width: 200px;
+    height: 100vh;
     padding-top: 50px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Center align items */
+    transition: right 0.3s ease;
   }
 
   nav ul li {
     display: block;
-    margin: 10px 0;
+    margin: 25px;
   }
 
-  nav ul .fa-solid {
+  .fa-times {
     position: absolute;
-    top: 25px;
-    left: -35px;
-    cursor: pointer;
-  }
-
-  .projects-list {
-    grid-template-columns: 1fr;
-  }
-
-  .btn, .btn2 {
-    width: 100%;
-    text-align: center;
+    top: 10px;
+    right: 10px;
   }
 }
-#msg{
-  color: #d15087;
-  margin-top: -40px;
-  display: block;
-}
+
