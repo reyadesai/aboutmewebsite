@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reya Desai's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script>
+    <script src="script2.js"></script> -->
+    <script src="https://kit.fontawesome.com/44174e391a.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"> 
+        <div class="border">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="menubar">
+                    <li><a href="#aboutme">About me</a></li>
+                    <li><a href="#courses">Relevant Coursework</a></li>
+                    <li><a href="#projects">Personal Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Reya <br> Desai</h1>
+            </div>
+        </div>
+    </div>   
+    <div id="sun"></div>
+    <!-- End Header -->
+
+    <!-- About Me section -->
+    <div id="aboutme">
+        <div class="border">
+            <div class="row">
+                <img src="me.png">
+                <div class="name">
+                <p> <span>About Me</span></p> 
+            </div>
+                <p><br> Computer Science Student<br> at  <br> <span class="span1">U</span> C <span class="span2">R</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- End About Me section -->
+    <div id="courses">
+    <div class="explaincourse">
+        <h1> Some classes I've taken that have expanded my skills:</h1>
+    </div>
+
+    <!-- Coursework -->
+    
+    <div class="coursework">
+        <p class="courses active" onclick="opentab('freshman', this)">Freshman Year</p>
+        <p class="courses" onclick="opentab('sophomore', this)">Sophomore Year</p>
+        <p class="courses" onclick="opentab('junior', this)">Junior Year</p>
+    </div>
+    <div class="content active1" id="freshman">
+        <ul>
+            <li>Introduction to Data Structures and Algorithms</li>
+        </ul>
+    </div>
+    <div class="content" id="sophomore">
+        <ul>
+            <li>Logic Design</li>
+            <li>Software Construction</li>
+            <li>Machine Organization and Assembly Language Programming</li>
+            <li>Discrete Structures</li>
+        </ul>
+    </div>   
+    <div class="content" id="junior">
+        <ul>
+            <li>Intermediate Data Structures and Algorithms</li>
+            <li>Design of Operating Systems</li>
+        </ul>
+    </div>
+</div>
+  <!-- End coursework -->
+
+    <!-- projects -->
+<div id="projects">
+<div class="border">
+    <h1 class="projects" > Projects</h1>
+    <div class="projects-list">
+        <div>
+            <h2>Vegetarianism Research</h2>
+            <p> Conducted an experimental study utilizing a digit span test to assess the potential impact an individual's diet has
+                on the working memory of students based in a high school in Carol Stream, IL</p>
+                <a href="https://docs.google.com/document/d/19WLJxFIo1kNbrPVM45fYIw-pVqzFXir6rHYbavPXTr8/edit?usp=sharing"> Link to paper</a> <br>
+                <a href="https://docs.google.com/presentation/d/1ERFezKB9Q3uQQ322xpxDjp9VN5RFcvn7H95IQw5dnjM/edit?usp=sharing"> Link to presentation</a>
+        </div>
+        <div>
+            <h2>Digital List</h2>
+            <p> Collaborated with a group of four members to develop a comprehensive digital store framework in C++</p>
+                <a href="https://github.com/reyadesai/Digital-Grocery-List.git"> Link to project</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end projects -->
+
+
+<!-- contact me -->
+<div id="contact">
+    <div class="border">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="sub-header"> Contact me</h1>
+        <p><i class="fa-regular fa-envelope"></i>: 1704reya@gmail.com </p>
+        <p><i class="fa-solid fa-phone"></i>: 630-877-9181</p>
+        <div class="div socials">
+            <a href="https://www.linkedin.com/in/reya1704/"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/reyadesai"> <i class="fa-brands fa-github"></i></i></a>
+            
+
+        </div>
+<a href="" download class="btn btn2">Download Resume</a>
+    </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type = "email" name="Email" placeholder="Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+                <button type="Submit" class="btn btn2"> Send</button>
+            </form>
+            <span id="msg"> </span>
+    </div>
+
+    </div>
+</div>
+
+<div class="copyright">
+    <p> Copyright © 2024- All rights reserved by Reya Desai</p>
+</div>
+
+</div>
+<script>var courses = document.getElementsByClassName("courses");
+    var contents = document.getElementsByClassName("content");
+    
+    function opentab(name, element) {
+        for (var course of courses) {
+            course.classList.remove("active");
+        }
+        for (var content of contents) {
+            content.classList.remove("active1");
+        }
+    
+       
+        element.classList.add("active");
+    
+       
+        document.getElementById(name).classList.add("active1");
+    }</script>
+
+    <script>
+
+var menu = document.getElementById("menubar")
+
+function openmenu(){
+    menu.style.right = "0";
+}
+function closemenu(){
+    menu.style.right = "-200px";
+}
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyiWWF32LsPEYV0cf_OyllZF7VxYKevUyV6D1wRe0BBCrtpwFVrnjczij-vW0mqyeNtzA/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg= document.getElementById("msg")
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML= "Sent Message!"
+        setTimeout(function(){
+            msg.innerHTML= ""
+        },5000)
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+    </script>
+</body>
+</html>
