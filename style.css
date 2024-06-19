@@ -416,8 +416,8 @@ nav .fa-solid {
     background: #ffb6c1; 
     position: fixed;
     top: 0;
- right:-200px; 
-    width: 200px;  /* Changed to 100% to ensure full width */
+ right:-300px; 
+    width: 100%;  
     height: 100vh; 
     padding-top: 50px;
     z-index: 2;
@@ -434,7 +434,7 @@ nav .fa-solid {
   nav ul .fa-solid {
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: -35px;
     cursor: pointer;
   }
 
