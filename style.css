@@ -403,7 +403,7 @@ nav .fas {
     background: #ffb6c1;
     position: fixed;
     top: 0;
-    right: -300px; /* Initially offscreen */
+    right: -900px; /* Initially offscreen */
     width: 200px;
     height: 100vh;
     padding-top: 50px;
