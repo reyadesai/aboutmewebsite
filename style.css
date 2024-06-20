@@ -384,7 +384,7 @@ nav .fas {
       transform: translate(-700%, -50%);
     }
     100% {
-      transform: translate(30%, 80%);
+      transform: translate(-700%, 80%);
     }
   }
 
