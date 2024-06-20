@@ -403,7 +403,7 @@ nav .fas {
     background: #ffb6c1;
     position: fixed;
     top: 0;
-    right: -1900px; /* Initially offscreen */
+    right: -1900px; 
     width: 200px;
     height: 100vh;
     padding-top: 50px;
@@ -421,11 +421,11 @@ nav .fas {
     right: 10px;
   }
   #sun {
-    left: 60%; /* Shift the sun to the right */
+    transform: translateY(-10); 
   }
 
   .row img {
-    margin-right: 20px; /* Shift the image to the right */
+    margin-right: 20px;
   }
 }
 
