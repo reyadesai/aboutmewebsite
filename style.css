@@ -391,36 +391,41 @@ nav .fas {
   .content {
     width: 90%;
     margin: 0 auto;
-  }
+}
 
-  nav .fas {
+nav .fas {
     display: block;
     font-size: 25px;
-  }
+}
 
-  nav ul {
+nav ul {
     display: block;
     background: #ffb6c1;
     position: fixed;
     top: 0;
-    right: -1900px; 
-    width: 400px;
+    right: -100%; 
+    width: 200px;
     height: 100vh;
     padding-top: 50px;
     transition: right 0.3s ease;
-  }
+    z-index: 1000;
+}
 
-  nav ul li {
+nav ul li {
     display: block;
     margin: 25px;
-  }
+}
 
-  .fa-times {
+.fa-times {
     position: absolute;
     top: 10px;
-    right: 10px;
-  }
- 
+    right: 30px;
+}
+
+nav ul.open {
+    right: 0;
+}
+
 @keyframes sunny {
   0% {
     transform: translate(-45%, -40%);
