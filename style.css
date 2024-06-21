@@ -404,7 +404,7 @@ nav .fas {
     position: fixed;
     top: 0;
     right: -1900px; 
-    width: 200px;
+    width: 400px;
     height: 100vh;
     padding-top: 50px;
     transition: right 0.3s ease;
